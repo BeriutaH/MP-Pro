@@ -1,6 +1,7 @@
 <template>
   <div class="daughter">
     <h1>I am daughter: {{ country }}</h1>
+    <!-- $parent 获取父组件的事件，必须是 $parent这个词 -->
     <button @click="handler($parent)">点击把台湾给我</button>
   </div>
 </template>

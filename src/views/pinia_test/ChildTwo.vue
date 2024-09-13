@@ -18,6 +18,7 @@ let todoStore = useTodoStore()
 
 // 点击p段落去修改仓库数据
 const updateTodo = () => {
+  // 也可以用todoStore.$patch直接赋值一个数字
   todoStore.updateTodo()
 }
 

@@ -7,22 +7,23 @@
     <!-- <Child :modelValue="money" @update:modelValue="handler"></Child> -->
     <!--
      v-model组件身上使用
-     第一:相当有给子组件传递props[modelValue] = 10000
-     第二:相当于给子组件绑定自定义事件update:modelValue
+       第一: 相当有给子组件传递props[modelValue] = 10000
+       第二: 相当于给子组件绑定自定义事件update:modelValue
    -->
 
     <ChildOne v-model="money"></ChildOne>
     <!-- v-model 默认使用 modelValue 作为属性名 -->
     <hr />
+    <!-- 绑定多个v-model -->
     <ChildTwo v-model:pageNo="pageNo" v-model:pageSize="pageSize"></ChildTwo>
   </div>
 </template>
 
 <script setup lang="ts">
-//v-model指令:收集表单数据,数据双向绑定
-//v-model也可以实现组件之间的通信,实现父子组件数据同步的业务
-//父亲给子组件数据 props
-//子组件给父组件数据 自定义事件
+// v-model指令:收集表单数据,数据双向绑定
+// v-model也可以实现组件之间的通信,实现父子组件数据同步的业务
+// 父亲给子组件数据 props
+// 子组件给父组件数据 自定义事件
 import { ref } from 'vue'
 import ChildOne from '@/views/v_model/ChildOne.vue'
 import ChildTwo from '@/views/v_model/ChildTwo.vue'

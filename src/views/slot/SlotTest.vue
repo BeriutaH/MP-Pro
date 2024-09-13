@@ -5,6 +5,7 @@
     <TestTwo :tasks="tasks">
       <!-- 作用域插槽（scoped slots），通过 v-slot 向父组件传递动态内容 -->
       <template v-slot="{ $row, $index }">
+        <!-- 外观是由父组件决定的 -->
         <p :style="{ color: $row.done ? 'green' : 'red' }">
           {{ $row.title }} ----- {{ $index }}
         </p>

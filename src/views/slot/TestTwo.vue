@@ -3,7 +3,7 @@
     <h1>作用域插槽</h1>
     <ul>
       <li v-for="(item, index) in tasks" :key="item.id">
-        <!-- 作用域插槽: 可以将数据回传给父组件 -->
+        <!-- 作用域插槽: 可以将数据回传给父组件，外观是由父组件决定的，具体放在什么标签里  -->
         <slot :$row="item" :$index="index"></slot>
       </li>
     </ul>

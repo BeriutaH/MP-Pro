@@ -8,7 +8,7 @@
 
 <script setup lang="ts">
 import Child from '@/views/provide_inject/Child.vue'
-// provide 和 inject 是用于跨组件共享数据的功能，特别适合在祖先组件和子孙组件之间传递数据，而不需要通过 props 或 emit 进行逐级传递
+// provide(提供) 和 inject(注入) 是用于跨组件共享数据的功能，特别适合在祖先组件和子孙组件之间传递数据，而不需要通过 props 或 emit 进行逐级传递
 import { reactive, provide } from 'vue'
 
 // let car = ref("法拉利")

@@ -16,6 +16,7 @@
       -->
     <EventOne @click="handlerTwo"></EventOne>
     <hr />
+    <!--  绑定自定义事件，字组件给父组件传递数据  -->
     <EventTwo @beriuta="handlerThree" @click="handlerFour"></EventTwo>
   </div>
 </template>
