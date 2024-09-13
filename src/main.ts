@@ -1,4 +1,3 @@
-// import './assets/main.css'
 // 引入实例化上下文的api方法createApp
 import { createApp } from 'vue'
 // 引入element ui

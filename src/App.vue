@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from 'vue-router'
   <div class="com">
     <h1>
       各种Vue组件通信/传值
-      <span style="color: red">非常重要，面试必备</span>
+      <span style="color: red">非常重要</span>
     </h1>
     <div>
       <h2 style="display: inline">演示</h2>
@@ -15,10 +15,11 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterLink to="/event_pre">custom event</RouterLink>
       <RouterLink to="/bus_pre">event bus</RouterLink>
       <RouterLink to="/model_pre">v-mode</RouterLink>
-      <RouterLink to="/attrs-listeners_pre">useAttrs</RouterLink>
-      <RouterLink to="/provide-inject_pre">provide-inject</RouterLink>
+      <RouterLink to="/attrs_listeners_pre">useAttrs</RouterLink>
+      <RouterLink to="/provide_inject_pre">provide-inject</RouterLink>
       <RouterLink to="/vuex_pre">pinia</RouterLink>
-      <RouterLink to="/ref-parent_pre">ref$parent</RouterLink>
+      <RouterLink to="/ref_parent_pre">ref$parent</RouterLink>
+      <RouterLink to="/slot_pre">slot</RouterLink>
     </div>
     <RouterView />
   </div>

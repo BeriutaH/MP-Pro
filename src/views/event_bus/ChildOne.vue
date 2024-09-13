@@ -1,7 +1,7 @@
 <template>
-<div class="child_one">
-  <h3 style="color: white">我是bus组件1</h3>
-</div>
+  <div class="child_one">
+    <h3 style="color: white">我是bus组件1</h3>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -15,7 +15,6 @@ onMounted(() => {
     console.log(car)
   })
 })
-
 </script>
 
 <style scoped>
